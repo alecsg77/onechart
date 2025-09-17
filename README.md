@@ -4,7 +4,7 @@ A generic Helm chart for your application deployments.
 
 Because no-one can remember the Kubernetes yaml syntax.
 
-https://gimlet.io/docs/reference/onechart-reference
+https://chart.onechart.dev
 
 
 ## Getting started
@@ -50,7 +50,7 @@ You can also template and install onechart from an OCI repository as follows:
 Check the generated Kubernetes yaml:
 
 ```bash
-helm template my-release oci://ghcr.io/gimlet-io/onechart --version 0.62.0 \
+helm template my-release oci://ghcr.io/alecsg77/onechart --version 0.62.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -58,7 +58,7 @@ helm template my-release oci://ghcr.io/gimlet-io/onechart --version 0.62.0 \
 Deploy with Helm:
 
 ```bash
-helm install my-release oci://ghcr.io/gimlet-io/onechart --version 0.62.0 \
+helm install my-release oci://ghcr.io/alecsg77/onechart --version 0.62.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -67,7 +67,7 @@ See all [Examples](/website/docs/examples/)
 
 ## Contribution Guidelines
 
-Thank you for your interest in contributing to the Gimlet project.
+Thank you for your interest in contributing to the OneChart project.
 
 Below are some guidelines and best practices for contributing to this repository:
 

@@ -53,7 +53,7 @@ tolerations: []
 affinity: {}
 
 # values to build and deploy static sites
-gitCloneUrl: https://github.com/gimlet-io/reactjs-test-app.git
+gitCloneUrl: https://github.com/alecsg77/reactjs-test-app.git
 buildImage: "node:latest"
 buildScript: |
   npm install && npm run build
