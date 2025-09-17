@@ -4,7 +4,7 @@ A generic Helm chart for your application deployments.
 
 Because no-one can remember the Kubernetes yaml syntax.
 
-https://chart.onechart.dev
+https://alecsg77.github.io/onechart
 
 
 ## Getting started
@@ -14,7 +14,7 @@ OneChart is a generic Helm Chart for web applications. The idea is that most Kub
 Add the Onechart Helm repository:
 
 ```bash
-helm repo add onechart https://chart.onechart.dev
+helm repo add onechart https://alecsg77.github.io/onechart
 ```
 
 Set your image name and version, the boilerplate is generated.
@@ -28,7 +28,7 @@ helm template my-release onechart/onechart \
 The example below deploys your application image, sets environment variables and configures the Kubernetes Ingress domain name:
 
 ```bash
-helm repo add onechart https://chart.onechart.dev
+helm repo add onechart https://alecsg77.github.io/onechart
 helm template my-release onechart/onechart -f values.yaml
 
 # values.yaml
@@ -102,6 +102,6 @@ For installation, refer to the CI workflow at `.github/workflows/build.yaml`.
 
 `make all` to test and package the Helm chart.
 The chart archives are put under `docs/` together with the Helm repository manifest (index.yaml)
-It is then served with Github Pages on https://chart.onechart.dev
+It is then served with Github Pages on https://alecsg77.github.io/onechart
 
 Github Actions is used to automate the make calls on git tag events.
