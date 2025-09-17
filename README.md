@@ -4,7 +4,7 @@ A generic Helm chart for your application deployments.
 
 Because no-one can remember the Kubernetes yaml syntax.
 
-https://gimlet.io/docs/reference/onechart-reference
+https://alecsg77.github.io/onechart
 
 
 ## Getting started
@@ -14,7 +14,7 @@ OneChart is a generic Helm Chart for web applications. The idea is that most Kub
 Add the Onechart Helm repository:
 
 ```bash
-helm repo add onechart https://chart.onechart.dev
+helm repo add onechart https://alecsg77.github.io/onechart
 ```
 
 Set your image name and version, the boilerplate is generated.
@@ -28,7 +28,7 @@ helm template my-release onechart/onechart \
 The example below deploys your application image, sets environment variables and configures the Kubernetes Ingress domain name:
 
 ```bash
-helm repo add onechart https://chart.onechart.dev
+helm repo add onechart https://alecsg77.github.io/onechart
 helm template my-release onechart/onechart -f values.yaml
 
 # values.yaml
@@ -50,7 +50,7 @@ You can also template and install onechart from an OCI repository as follows:
 Check the generated Kubernetes yaml:
 
 ```bash
-helm template my-release oci://ghcr.io/gimlet-io/onechart --version 0.62.0 \
+helm template my-release oci://ghcr.io/alecsg77/onechart --version 0.62.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -58,7 +58,7 @@ helm template my-release oci://ghcr.io/gimlet-io/onechart --version 0.62.0 \
 Deploy with Helm:
 
 ```bash
-helm install my-release oci://ghcr.io/gimlet-io/onechart --version 0.62.0 \
+helm install my-release oci://ghcr.io/alecsg77/onechart --version 0.62.0 \
   --set image.repository=nginx \
   --set image.tag=1.19.3
 ```
@@ -67,7 +67,7 @@ See all [Examples](/website/docs/examples/)
 
 ## Contribution Guidelines
 
-Thank you for your interest in contributing to the Gimlet project.
+Thank you for your interest in contributing to the OneChart project.
 
 Below are some guidelines and best practices for contributing to this repository:
 
@@ -102,6 +102,6 @@ For installation, refer to the CI workflow at `.github/workflows/build.yaml`.
 
 `make all` to test and package the Helm chart.
 The chart archives are put under `docs/` together with the Helm repository manifest (index.yaml)
-It is then served with Github Pages on https://chart.onechart.dev
+It is then served with Github Pages on https://alecsg77.github.io/onechart
 
 Github Actions is used to automate the make calls on git tag events.
